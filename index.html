@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Ganhos</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main-container">
+    <section class="left-section">
+      <h2 class="section-title">Junte-se a nós e transforme sua paixão em lucro!</h2>
+      <p class="instructions">Na Consultoria de Beleza Natura e Avon, existem cinco níveis, como degraus em uma escada de evolução. Quanto mais você vende, mais alto você sobe nesses níveis, aumentando não só seus aprendizados mas também seus ganhos.</p>
+      <button id="tab-natura" class="buttonOutlined" data-category="natura">Quero ser Consultora</button>
+    </section>
+    <section id="calculadora-ganhos" class="right-section calculadora-ganhos">
+      <h1 class="calculator-title">Simule seus ganhos na Consultoria de Beleza</h1>
+      <!--label for="volume-vendas" class="form-label">Ajuste o valor de suas vendas e veja a estimativa de lucro!</label-->
+
+      <!--div class="categoria-produto">
+        <button id="tab-natura" class="tab active" data-category="natura">Natura</button>
+        <button id="tab-avon" class="tab" data-category="avon">Avon</button>
+      </div-->
+      <div class="calculator-subtitle">
+        <input id="volume-vendas" class="form-slider" type="range" min="50" max="500" step="50" value="100">
+        <h3 class="slider-value" id="slider-value">R$ 100</h3>
+      </div>
+      <div class="produto-ganhos-container">
+        <div class="produto-container">
+          <img id="imagem-produto" class="imagem-produto" src="img/produto-100.png" alt="Produto inicial">
+          <div class="produto-legenda">
+            <img src="img/outlined-finance-tagdiscount.svg">
+            <div class="tag-text"><p id="produto-legenda">Presente Natura Tododia Algodão Mimo<br><strong>R$ 29,90</strong></p></div>
+          </div>
+        </div>
+        <div id="resultado-ganhos" class="resultado-ganhos">
+          <ul id="resultado-lista" class="resultado-lista">
+            <li style="background-color: #9F81FD; margin-left: 0px;">
+              <img src="img/outlined-content-diamond.svg" class="icon"><div class="gain-value"><span class="level">Diamante</span><br>R$ <strong><span id="ganhos-diamante" class="gain"> 0,00</span></strong></div>
+            </li>
+            <li style="background-color: #DEA003; margin-left: 8px;">
+              <img src="img/outlined-content-gold.svg" class="icon"><div class="gain-value"><span class="level">Ouro<br>R$ <strong><span id="ganhos-ouro"> 0,00</span></strong></div>
+            </li>
+            <li style="background-color: #A4A4A4; margin-left: 16px;">
+              <img src="img/outlined-content-silver.svg" class="icon"><div class="gain-value"><span class="level">Prata<br>R$ <strong><span id="ganhos-prata"> 0,00</span></strong></div>
+            </li>
+            <li style="background-color: #A0430E; margin-left: 24px;">
+              <img src="img/outlined-content-bronze.svg" class="icon"><div class="gain-value"><span class="level">Bronze<br>R$ <strong><span id="ganhos-bronze"> 0,00</span></strong></div>
+            </li>
+            <li style="background-color: #B3003B; margin-left: 32px;">
+              <img src="img/outlined-content-seed.svg" class="icon"><div class="gain-value"><span class="level">Semente<br>R$ <strong><span id="ganhos-semente"> 0,00</span></strong></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Script para Atualizar Ganhos e Imagens -->
+  <script>
+    const comissoes = {
+      'semente': 0.20,
+      'bronze': 0.30,
+      'prata': 0.30,
+      'ouro': 0.32,
+      'diamante': 0.35
+    };
+  
+    const produtos = {
+      50: { 'imagem': 'img/produto-50.png', 'nome': 'Produto Inicial', 'valor': '50,00' },
+      100: { 'imagem': 'img/produto-100.png', 'nome': 'Presente Natura Tododia Algodão Mimo', 'valor': '100,00' },
+      150: { 'imagem': 'img/produto-150.png', 'nome': 'Creme Natura', 'valor': '150,00' },
+      200: { 'imagem': 'img/produto-200.png', 'nome': 'Perfume Natura Homem', 'valor': '200,00' },
+      250: { 'imagem': 'img/produto-250.png', 'nome': 'Kit Natura Ekos', 'valor': '250,00' },
+      300: { 'imagem': 'img/produto-300.png', 'nome': 'Presente Natura Essencial', 'valor': '300,00' },
+      350: { 'imagem': 'img/produto-350.png', 'nome': 'Presente Natura Una', 'valor': '350,00' },
+      400: { 'imagem': 'img/produto-400.png', 'nome': 'Presente Natura Tododia', 'valor': '400,00' },
+      450: { 'imagem': 'img/produto-450.png', 'nome': 'Presente Natura Lumina', 'valor': '450,00' },
+      500: { 'imagem': 'img/produto-500.png', 'nome': 'Presente Natura Ekos Priprioca', 'valor': '500,00' }
+    };
+  
+    const slider = document.getElementById('volume-vendas');
+    const sliderValue = document.getElementById('slider-value');
+    const imagemProduto = document.getElementById('imagem-produto');
+    const produtoLegenda = document.getElementById('produto-legenda');
+  
+    function atualizarGanhos() {
+      const volumeVendas = parseFloat(slider.value);
+      sliderValue.textContent = `R$ ${volumeVendas}`;
+  
+      let previousKey = 0;
+      Object.keys(produtos).sort((a, b) => a - b).forEach(key => {
+        if (volumeVendas >= key) {
+          previousKey = key; // Atualiza a chave do produto que deverá ser mostrado
+        }
+      });
+  
+      const produto = produtos[previousKey];
+  
+      if (imagemProduto.src !== produto['imagem']) {
+        imagemProduto.classList.add('fade-image');
+        setTimeout(() => {
+          imagemProduto.src = produto['imagem'];
+          imagemProduto.alt = produto['nome'];
+          produtoLegenda.innerHTML = `${produto['nome']}<br>R$ <strong>${produto['valor']}</strong>`;
+          imagemProduto.classList.remove('fade-image');
+        }, 100);
+      }
+  
+      Object.keys(comissoes).forEach(nivel => {
+        document.getElementById(`ganhos-${nivel}`).textContent = `${(volumeVendas * comissoes[nivel]).toFixed(2)}`;
+      });
+    }
+  
+    slider.addEventListener('input', atualizarGanhos);
+    window.onload = atualizarGanhos; // Assegura a inicialização correta
+  </script>

@@ -1,0 +1,147 @@
+/* Estilos Básicos para a Calculadora de Ganhos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calculadora-ganhos {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .instructions {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  .categoria-produto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    flex: 1;
+    background-color: #bdc3c7;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .tab:hover {
+    background-color: #2980b9;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .form-slider {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .slider-value {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .form-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #1e8449;
+  }
+  
+
+
+  /* Adicionar estilos para a imagem de produtos */
+.imagem-produto {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Adicionar estilos para a disposição de imagem e ganhos */
+.produto-ganhos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .produto-container {
+    width: 45%;
+    text-align: left;
+  }
+  
+  .imagem-produto {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .produto-legenda {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  
+  .resultado-ganhos {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .resultado-title {
+    font-size: 20px;
+    color: #2c3e50;
+  }
+  
+  .resultado-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resultado-lista li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  
+  

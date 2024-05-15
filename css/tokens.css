@@ -1,0 +1,71 @@
+:root {
+    /* Cores */
+    --colorPrimary: #D73F3C;
+    --colorPrimaryLight: #E16F6D;
+    --colorSecondary: #6A777A;
+    --colorBackground: #FAFAFA;
+    --colorSurface: #FFFFFF;
+    --colorOnPrimary: #FFFFFF;
+    --colorOnSecondary: #FFFFFF;
+    --colorOnBackground: #111111;
+    --colorOnSurface: #111111;
+    --colorNeutral0: #FFFFFF;
+    --colorNeutral50: #FAFAFA;
+    --colorNeutral75: #EEEEEE;
+    --colorNeutral100: #E1E1E1;
+    --colorNeutral200: #C9C9C9;
+    --colorNeutral300: #BDBDBD;
+    --colorNeutral400: #A4A4A4;
+    --colorNeutral500: #8C8C8C;
+    --colorNeutral600: #737373;
+    --colorNeutral700: #4E4E4E;
+    --colorNeutral800: #363636;
+    --colorNeutral900: #111111;
+
+  
+    /* Tipografia */
+    --headline1: 96px;
+    --headline2: 64px;
+    --headline3: 48px;
+    --headline4: 32px;
+    --headline5: 24px;
+    --headline6: 20px;
+    --subtitle1: 16px;
+    --subtitle2: 14px;
+    --body1: 16px;
+    --body2: 14px;
+    --caption: 12px;
+    --overline: 12px;
+  
+    /* Espaçamento */
+    --buttonPaddingX: 24px;
+    --buttonPaddingY: 4px;
+    --spacingMicro: 4px;
+    --spacingTiny: 8px;
+    --spacingSmall: 16px;
+    --spacingStandard: 24px;
+    --spacingSemi: 32px;
+    --spacingLarge: 48px;
+    --spacingXLarge: 64px;
+  
+    /* Arredondamentos */
+    --buttonBorderRadius: 999px;
+    --borderRadiusSmall: 2px;
+    --borderRadiusMedium: 4px;
+    --borderRadiusLarge: 8px;
+    --borderRadiusXLarge: 16px;
+    --borderRadiusXXLarge: 32px;
+  
+    /* Elevações (Sombras) */
+    --elevationMicro: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+    --elevationTiny: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    --elevationSmall: 0 3px 4px 0 rgba(0, 0, 0, 0.14);
+    --elevationMedium: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+    --elevationLarge: 0 6px 10px 0 rgba(0, 0, 0, 0.14);
+    --elevationLargeX: 0 8px 10px 0 rgba(0, 0, 0, 0.14);
+    --elevationLargeXX: 0 9px 12px 0 rgba(0, 0, 0, 0.14);
+    --elevationHuge: 0 12px 17px 0 rgba(0, 0, 0, 0.14);
+    --elevationHugeX: 0 16px 24px 0 rgba(0, 0, 0, 0.14);
+    --elevationHugeXX: 0 24px 38px 0 rgba(0, 0, 0, 0.14);
+  }
+  
