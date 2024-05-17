@@ -35,42 +35,43 @@
       <p class="instructions">Na Consultoria de Beleza Natura e Avon, existem cinco níveis, como degraus em uma escada de evolução. Quanto mais você vende, mais alto você sobe nesses níveis, aumentando não só seus aprendizados mas também seus ganhos.</p>
       <button id="tab-natura" class="buttonOutlined" data-category="natura">Quero ser Consultora</button>
     </section>
-    <section id="calculadora-ganhos" class="right-section calculadora-ganhos">
+    <section id="calculadora-ganhos" class="right-section">
       <h1 class="calculator-title">Simule seus ganhos na Consultoria de Beleza</h1>
-      <!--label for="volume-vendas" class="form-label">Ajuste o valor de suas vendas e veja a estimativa de lucro!</label-->
+      <label for="volume-vendas" class="form-label">Ajuste o valor de suas vendas e veja a estimativa de lucro!</label>
 
-      <!--div class="categoria-produto">
-        <button id="tab-natura" class="tab active" data-category="natura">Natura</button>
-        <button id="tab-avon" class="tab" data-category="avon">Avon</button>
-      </div-->
-      <div class="calculator-subtitle">
+      <!-- Slider -->
+      <div class="calculator">
         <input id="volume-vendas" class="form-slider" type="range" min="50" max="500" step="50" value="100">
         <h3 class="slider-value" id="slider-value">R$ 100</h3>
       </div>
-      <div class="produto-ganhos-container">
-        <div class="produto-container">
+
+      <!-- Sugestão de produtos e ganhos -->
+      <div class="product-container">
+
+        <div class="promo">
           <img id="imagem-produto" class="imagem-produto" src="img/produto-100.png" alt="Produto inicial">
-          <div class="produto-legenda">
+          <div class="promo-subtitle">
             <img src="img/outlined-finance-tagdiscount.svg">
-            <div class="tag-text"><p id="produto-legenda">Presente Natura Tododia Algodão Mimo<br><strong>R$ 29,90</strong></p></div>
+            <div class="tag-text"><p id="product-subtitle">Presente Natura Tododia Algodão Mimo<br><strong>R$ 29,90</strong></p></div>
           </div>
         </div>
+
         <div id="resultado-ganhos" class="resultado-ganhos">
           <ul id="resultado-lista" class="resultado-lista">
-            <li style="background-color: #9F81FD; margin-left: 0px;">
-              <img src="img/outlined-content-diamond.svg" class="icon"><div class="gain-value"><span class="level">Diamante</span><br>R$ <strong><span id="ganhos-diamante" class="gain"> 0,00</span></strong></div>
+            <li style="background-color: #8F74E3;">
+              <img src="img/outlined-content-diamond-negative.svg" class="icon"><div class="gain-value"><span class="level">Diamante</span><br>R$ <strong><span id="ganhos-diamante" class="gain"> 0,00</span></strong></div>
             </li>
-            <li style="background-color: #DEA003; margin-left: 8px;">
-              <img src="img/outlined-content-gold.svg" class="icon"><div class="gain-value"><span class="level">Ouro<br>R$ <strong><span id="ganhos-ouro"> 0,00</span></strong></div>
+            <li style="background-color: #DDAB00;">
+              <img src="img/outlined-content-gold-negative.svg" class="icon"><div class="gain-value"><span class="level">Ouro<br>R$ <strong><span id="ganhos-ouro" class="gain"> 0,00</span></strong></div>
             </li>
-            <li style="background-color: #A4A4A4; margin-left: 16px;">
-              <img src="img/outlined-content-silver.svg" class="icon"><div class="gain-value"><span class="level">Prata<br>R$ <strong><span id="ganhos-prata"> 0,00</span></strong></div>
+            <li style="background-color: #9E9794;">
+              <img src="img/outlined-content-silver-negative.svg" class="icon"><div class="gain-value"><span class="level">Prata<br>R$ <strong><span id="ganhos-prata" class="gain"> 0,00</span></strong></div>
             </li>
-            <li style="background-color: #A0430E; margin-left: 24px;">
-              <img src="img/outlined-content-bronze.svg" class="icon"><div class="gain-value"><span class="level">Bronze<br>R$ <strong><span id="ganhos-bronze"> 0,00</span></strong></div>
+            <li style="background-color: #BC5214;">
+              <img src="img/outlined-content-bronze-negative.svg" class="icon"><div class="gain-value"><span class="level">Bronze<br>R$ <strong><span id="ganhos-bronze" class="gain"> 0,00</span></strong></div>
             </li>
-            <li style="background-color: #B3003B; margin-left: 32px;">
-              <img src="img/outlined-content-seed.svg" class="icon"><div class="gain-value"><span class="level">Semente<br>R$ <strong><span id="ganhos-semente"> 0,00</span></strong></div>
+            <li style="background-color: #B7003C;">
+              <img src="img/outlined-content-seed-negative.svg" class="icon"><div class="gain-value"><span class="level">Semente<br>R$ <strong><span id="ganhos-semente" class="gain"> 0,00</span></strong></div>
             </li>
           </ul>
         </div>
@@ -104,7 +105,7 @@
     const slider = document.getElementById('volume-vendas');
     const sliderValue = document.getElementById('slider-value');
     const imagemProduto = document.getElementById('imagem-produto');
-    const produtoLegenda = document.getElementById('produto-legenda');
+    const produtoLegenda = document.getElementById('product-subtitle');
   
     function atualizarGanhos() {
       const volumeVendas = parseFloat(slider.value);
