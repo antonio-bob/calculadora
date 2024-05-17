@@ -1,4 +1,3 @@
-/* Estilos Básicos para a Calculadora de Ganhos */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--colorBackground);
@@ -16,6 +15,7 @@ body {
 /* Container Principal - Colunas */
 .main-container {
   max-width: 1280px;
+
   display: flex;
   flex-direction:row;
   justify-content: space-between;
@@ -67,6 +67,7 @@ body {
 .right-section {
   flex: 1;
   justify-content:center;
+  align-items: center;
   
   background-color: var(--colorSurface);
   border-radius: var(--borderRadiusSmall);
@@ -107,9 +108,9 @@ body {
   width: 75%;
   height: 2px;
   cursor: pointer;
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none; 
   appearance: none;
-  background: var(--colorNeutral200); /* Green background */
+  background: var(--colorNeutral200); 
   border-radius: var(--buttonBorderRadius);
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -149,14 +150,12 @@ body {
 
 
 .imagem-produto {
-
   height: 300px;
 
   border-radius: var(--borderRadiusLarge);
-  transition: opacity 0.3s ease-in-out; /* Efeito de transição suave para a opacidade */
-  opacity: 1; /* Opacidade inicial */
-  
-  background-color: aqua;
+  transition: opacity 0.3s ease-in-out; 
+  opacity: 1; 
+
 }
 
 /* Clase para suavizar a troca de imagem */
@@ -166,19 +165,19 @@ body {
 
 .product-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* row no desktop e column no mobile */
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .promo {
-  flex: 1;
+  display: flex;
+  flex: 2; /* 2 no desktop e 1 no mobile*/
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content:flex-end;
+  align-items:center;
 
   text-align: center;
-  background-color: bisque;
 }
 
 .promo-subtitle {
@@ -199,15 +198,13 @@ body {
   padding-left: 8px;
 }
 
-.resultado-ganhos {
+.earnings-result {
   flex: 1;
   display: flex;
   flex-direction: column;
   text-align: left;
   align-items: center;
   justify-content: flex-end;
-
-  background-color: aquamarine;
 }
 
 .resultado-title {
@@ -215,54 +212,56 @@ body {
   color: var(--colorOnSurface);
 }
 
-.resultado-lista {
+.results-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
 }
 
-.resultado-lista li {
-  height: auto;
+.results-list li {
+  height: 50px; /* 50px no desktop e auto no mobile */
   
-  display: inline-flex; /* Flexbox para alinhamento */
-  flex-direction: column;
-  align-items: center; /* Centraliza verticalmente */
+  display: flex; /* inline-flex no desktop e flex no mobile */
+  flex-direction: row; /* row no desktop e column-reverse no mobile */
+  align-items: center; 
   justify-content: space-between;
   
-  text-transform: uppercase; /* Para 'caption uppercase' */
+  text-transform: uppercase; 
   font-size: var(--body1);
 
   color: var(--colorOnPrimary);
   
   padding: var(--spacingMicro) var(--spacingTiny) var(--spacingMicro) var(--spacingMicro);
-  margin-bottom: var(--spacingMicro);
-  border-radius: var(--buttonBorderRadius) var(--buttonBorderRadius) 0 0;
-  /*border-radius: var(--buttonBorderRadius) 0 0 var(--buttonBorderRadius);*/
+  margin-bottom: 1px;
+  /*border-radius: var(--buttonBorderRadius) var(--buttonBorderRadius) 0 0;*/ /* Ativar no mobile */
+  border-radius: var(--buttonBorderRadius) 0 0 var(--buttonBorderRadius); /* Ativar no desktop */
 }
 
-.resultado-lista li .icon {
-  width: var(--spacingLarge); /* Largura do ícone */
-  height: var(--spacingLarge); /* Altura do ícone */
+.results-list li .icon {
+  width: var(--spacingSemi); 
+  height: var(--spacingSemi); 
   
-  margin: var(--spacingMicro); /* Espaço entre ícone e texto */
+  margin: var(--spacingMicro); 
   padding: var(--spacingMicro);
 }
 
-.resultado-lista li .gain-value {
+.results-list li .value-to-gain {
   text-align: center;
 }
 
-.resultado-lista li .gain {
+.results-list li .amount {
   text-align: center;
-  font-size: var(--body1); /* Tamanho da fonte para 'body1 strong' */
+  font-size: var(--body1);
 }
 
-.resultado-lista li .level{
+.results-list li .level{
   font-size: var(--caption);
   letter-spacing: 1px;
 }
 
-/* Estilos Básicos para a Calculadora de Ganhos */
-/*...estilos existentes...*/
+
+/* Comportamento mobile */
 
 @media (max-width: 768px) {
   /* Container Principal - Colunas */
@@ -275,78 +274,67 @@ body {
   /* Ajustes para a seção esquerda e direita */
   .left-section, .right-section {
     display: box;
-    width: 100%;
     text-align: center;
     padding: var(--spacingStandard);
   }
-
-
-
-
   .product-container {
-    flex-direction: column;
-    }
-
-
-
-  .promo {
-    width: auto;
+    flex-direction: column; /* row no desktop e column no mobile */
   }
-
-  .imagem-produto {
-    width: 60%;
-    height: auto;
-  }
-
-  .resultado-ganhos {
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: center;
-    justify-content: flex-end;
   
-    background-color: aquamarine;
-  }
-
-  .resultado-lista li {
-    height: auto;
-    
-    display: inline-flex; /* Flexbox para alinhamento */
+  .promo {
+    display: flex; /* 2 no desktop e 1 no mobile*/
     flex-direction: column;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+  }
+  
+  .promo-subtitle {
+  }
+  
+  .promo-subtitle .tag-text {
+  }
+  
+  .earnings-result {
+  }
+  
+  .resultado-title {
+  }
+  
+  .results-list {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .results-list li {
+    width: 75px;
+    height: 160px; /* 50px no desktop e auto no mobile */
     
-    text-transform: uppercase; /* Para 'caption uppercase' */
+    margin-left: 0px !important;
+    display: inline-flex; /* flex no desktop e inline-flex no mobile */
+    flex-direction: column; /* row no desktop e column no mobile */
+    border-radius: var(--buttonBorderRadius) var(--buttonBorderRadius) 0 0; /* Ativar no mobile */
+    /*border-radius: var(--buttonBorderRadius) 0 0 var(--buttonBorderRadius);*/ /* Ativar no desktop */
+  }
+  
+  .results-list li .icon {
+    margin: var(--spacingMicro); 
+    padding: var(--spacingTiny);
+  }
+  
+  .results-list li .value-to-gain {
+    text-align: center;
+  }
+  
+  .results-list li .amount {
+    text-align: center;
     font-size: var(--body1);
-
-    color: var(--colorOnPrimary);
-    
-    padding: var(--spacingMicro) var(--spacingTiny) var(--spacingMicro) var(--spacingMicro);
-    margin-bottom: var(--spacingMicro);
-    border-radius: var(--buttonBorderRadius) var(--buttonBorderRadius) 0 0;
-    /*border-radius: var(--buttonBorderRadius) 0 0 var(--buttonBorderRadius);*/
   }
-
-  .resultado-lista li .icon {
-    width: var(--spacingLarge); /* Largura do ícone */
-    height: var(--spacingLarge); /* Altura do ícone */
-    
-    margin: var(--spacingMicro); /* Espaço entre ícone e texto */
-    padding: var(--spacingMicro);
-  }
-
-  .resultado-lista li .gain-value {
-    text-align: center;
-  }
-
-  .resultado-lista li .gain {
-    text-align: center;
-    font-size: var(--body1); /* Tamanho da fonte para 'body1 strong' */
-  }
-
-  .resultado-lista li .level{
+  
+  .results-list li .level{
     font-size: var(--caption);
     letter-spacing: 1px;
   }
