@@ -260,6 +260,11 @@ body {
   letter-spacing: 1px;
 }
 
+.results-list li .diamond {
+background-color: var(--colorLevelDiamond);
+margin-left: var(--spacingTiny);
+}
+
 
 /* Comportamento mobile */
 
