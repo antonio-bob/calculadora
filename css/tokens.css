@@ -21,7 +21,11 @@
     --colorNeutral700: #4E4E4E;
     --colorNeutral800: #363636;
     --colorNeutral900: #111111;
-
+    --colorLevelDiamond: #8F74E3;
+    --colorLevelGold: #DDAB00;
+    --colorLevelSilver: #9E9794;
+    --colorLevelBronze: #BC5214;
+    --colorLevelSeed: #B7003C;
   
     /* Tipografia */
     --headline1: 96px;
