@@ -265,6 +265,25 @@ background-color: var(--colorLevelDiamond);
 margin-left: var(--spacingTiny);
 }
 
+.results-list li .gold{
+background-color: var(--colorLevelGold);
+margin-left: var(--spacingTiny);
+}
+
+.results-list li .silver {
+background-color: var(--colorLevelSilver);
+margin-left: var(--spacingTiny);
+}
+
+.results-list li .bronze {
+background-color: var(--colorLevelBronze);
+margin-left: var(--spacingTiny);
+}
+
+.results-list li .seed {
+background-color: var(--colorLevelSeed);
+margin-left: var(--spacingTiny);
+}
 
 /* Comportamento mobile */
 
