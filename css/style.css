@@ -417,18 +417,18 @@ body {
 
   .results-list .diamond {
     margin-left: 0px;
-    margin-top: 0px;
+    margin: 0 0 0 0;
 
     width: var(--spacingXLarge);
-    height: 100%;
+    height: inherit;
   }
   
   .results-list .gold{
     margin-left: 0px;
-    margin-top: var(--spacingTiny);
+    margin: var(--spacingTiny) 0 0 0;
 
     width: var(--spacingXLarge);
-    height: 150px;
+    height: inherit;
   }
   
   .results-list .silver {
@@ -457,7 +457,7 @@ body {
   
   .results-list li {
     width: 75px;
-    height: 160px; /* 50px no desktop e auto no mobile */
+    height: 160px; /* 64px no desktop e auto no mobile */
     
     margin-left: 0px !important;
     display: inline-flex; /* flex no desktop e inline-flex no mobile */
