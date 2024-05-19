@@ -4,12 +4,6 @@ body {
   color: var(--colorOnBackground);
   margin: 0;
   padding: 0;
-
-
-  background-image: url('../img/Asset 4.svg');
-  background-position:center;
-  background-size:inherit;
-  background-repeat: no-repeat;
 }
 
 /* Container Principal - Colunas */
@@ -24,6 +18,12 @@ body {
   margin: var(--spacingXLarge) auto;
   padding: var(--spacingSemi);
   gap: var(--spacingLarge);
+  
+
+  background-image: url('../img/Asset 4.svg');
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 /* Título e Subtítulo à Esquerda */
@@ -350,6 +350,7 @@ body {
 @media (max-width: 768px) {
   /* Container Principal - Colunas */
   .main-container {
+    background-color: var(--colorPrimary);
     flex-direction: column;
     gap: var(--spacingMedium);
     padding: var(--spacingMedium);
@@ -360,6 +361,7 @@ body {
     display: box;
     text-align: center;
     padding: var(--spacingStandard);
+    margin: var(--spacingStandard);
   }
   .product-container {
     flex: 2;
