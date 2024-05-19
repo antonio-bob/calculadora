@@ -93,8 +93,8 @@ body {
 }
 
 .calculator {
-  padding: 26px;
-  margin: 0;
+  padding: 0;
+  margin: 0 26px;
 
   width: inherit;
   height: 64px;
