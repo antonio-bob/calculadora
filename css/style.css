@@ -355,12 +355,21 @@ body {
   }
 
   /* Ajustes para a seção esquerda e direita */
-  .left-section, .right-section {
+
+  .left-section {
     display: box;
     text-align: center;
     padding: var(--spacingStandard);
     margin: var(--spacingStandard);
   }
+
+  .right-section {
+    display: box;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
   .product-container {
     flex: 2;
     flex-direction: column; /* row no desktop e column no mobile */
