@@ -30,7 +30,7 @@
 </head>
 <body>
   <div class="main-container">
-    
+
     <section class="left-section">
       <h2 class="section-title">Junte-se a nós e transforme sua paixão em lucro!</h2>
       <p class="instructions">Na Consultoria de Beleza Natura e Avon, existem cinco níveis, como degraus em uma escada de evolução. Quanto mais você vende, mais alto você sobe nesses níveis, aumentando não só seus aprendizados mas também seus ganhos.</p>
@@ -136,7 +136,7 @@
       }
   
       Object.keys(comissoes).forEach(nivel => {
-        document.getElementById(`ganhos-${nivel}`).textContent = `${(volumeVendas * comissoes[nivel]).toFixed(0)}`;
+        document.getElementById(`ganhos-${nivel}`).textContent = `${(volumeVendas * comissoes[nivel]).toFixed(0)} | ${(volumeVendas * comissoes[nivel]).toFixed(0)}`;
       });
     }
   
