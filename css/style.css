@@ -80,7 +80,7 @@ body {
 }
 
 .calculator-title{
-  padding: 0;
+  padding: var(--spacingStandard);
   margin: 0;
   color: var(--colorSecondary);
 }
@@ -112,7 +112,7 @@ body {
 
 .calculator .form-slider {
   padding: 0;
-  margin: 0;
+  margin: 0 var(--spacingStandard);
 
   flex: 3;
   /*width: 75%;*/
