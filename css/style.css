@@ -368,6 +368,14 @@ body {
     flex-direction: column; /* row no desktop e column no mobile */
   }
   
+.calculator .form-slider {
+  flex: 2;
+}
+
+.calculator. slider-value {
+  flex: 1;
+}
+
   .promo {
     display: flex; /* 2 no desktop e 1 no mobile*/
     flex-direction: column;
