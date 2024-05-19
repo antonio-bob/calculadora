@@ -462,6 +462,9 @@ body {
     margin-left: 0px !important;
     display: inline-flex; /* flex no desktop e inline-flex no mobile */
     flex-direction: column; /* row no desktop e column no mobile */
+
+  align-items: flex-end;
+  justify-content: flex-end;
     border-radius: var(--buttonBorderRadius) var(--buttonBorderRadius) 0 0; /* Ativar no mobile */
     /*border-radius: var(--buttonBorderRadius) 0 0 var(--buttonBorderRadius);*/ /* Ativar no desktop */
   }
