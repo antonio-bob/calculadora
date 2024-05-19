@@ -410,23 +410,23 @@ body {
   .results-list {
     display: inline-flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
   
 
   .results-list .diamond {
-    margin: 0 0 0 0;
+    margin: 0;
 
     width: var(--spacingXLarge);
-    height: inherit;
+    height: 100%;
   }
   
   .results-list .gold{
-    margin: 0 var(--spacingTiny) 0 0;
+    margin: 0;
 
     width: var(--spacingXLarge);
-    height: inherit;
+    height: 95%;
   }
   
   .results-list .silver {
