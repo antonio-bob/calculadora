@@ -430,27 +430,24 @@ body {
   }
   
   .results-list .silver {
-    margin-left: 0px;
-    margin-top: var(--spacingSmall);
+    margin: 0;
 
     width: var(--spacingXLarge);
-    height: 150px;
+    height: 90%;
   }
   
   .results-list .bronze {
-    margin-left: 0px;
-    margin-top: var(--spacingStandard);
+    margin: 0;
 
     width: var(--spacingXLarge);
-    height: 150px;
+    height: 85%;
   }
   
   .results-list .seed {
-    margin-left: 0px;
-    margin-top: var(--spacingSemi);
+    margin: 0;
 
     width: var(--spacingXLarge);
-    height: 150px;
+    height: 80%;
   }
   
   .results-list li {
