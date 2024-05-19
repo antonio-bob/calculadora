@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   
-  margin: var(--spacingXLarge) auto;
+  margin: 0;
   padding: var(--spacingSemi);
   gap: var(--spacingLarge);
   
