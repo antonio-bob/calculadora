@@ -374,6 +374,7 @@ body {
 
 .calculator. slider-value {
   flex: 1;
+  font-size: var(--headline6);
 }
 
   .promo {
