@@ -341,17 +341,17 @@ body {
 .mark-1 {
   display: flex;
   flex-direction: column;
-  padding: var(--spacingMicro);
+  padding: 0 var(--spacingTiny);
 
   /* Remova a borda inicial */
   border-style: none solid none none;
-  border-color: var(--colorNeutral200);
+  border-color: var(--colorOnPrimary);
 }
 
 .mark-2 {
   display: flex;
   flex-direction: column;
-  padding: var(--spacingMicro);
+  padding: 0 var(--spacingMicro);
 
   /* Remova a borda inicial */
   border-style: none;

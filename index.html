@@ -66,15 +66,15 @@
               <img src="img/outlined-content-diamond-negative.svg" class="icon">
               <div class="value-to-gain">
                 <div>
-                  <span class="level">Diamante</span><br>
+                  <span class="level">Diamante</span>
 
                   <div class="amount">
                     <div class="mark-1">
-                      <strong><span id="ganhos-diamante-natura" class="amount-number"> 0,00</span></strong>
+                      <strong><span id="ganhos-natura-diamond" class="amount-number"> R$ 0,00</span></strong>
                       <span class="amount-mark">Natura</span>
                     </div>
                     <div class="mark-2">
-                      <strong><span id="ganhos-diamante-avon" class="amount-number"> 0,00</span></strong>
+                      <strong><span id="ganhos-avon-diamond" class="amount-number"> 0,00</span></strong>
                       <span class="amount-mark">Avon</span>
                     </div>
                   </div>
@@ -83,16 +83,84 @@
               </div>
             </li>
             <li class="gold">
-              <img src="img/outlined-content-gold-negative.svg" class="icon"><div class="value-to-gain"><span class="level">Ouro<br>R$ <strong><span id="ganhos-ouro" class="amount"> 0,00</span></strong></div>
+              <img src="img/outlined-content-gold-negative.svg" class="icon">
+              <div class="value-to-gain">
+                <div>
+                  <span class="level">Ouro</span>
+
+                  <div class="amount">
+                    <div class="mark-1">
+                      <strong><span id="ganhos-natura-gold" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Natura</span>
+                    </div>
+                    <div class="mark-2">
+                      <strong><span id="ganhos-avon-gold" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Avon</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </li>
             <li class="silver">
-              <img src="img/outlined-content-silver-negative.svg" class="icon"><div class="value-to-gain"><span class="level">Prata<br>R$ <strong><span id="ganhos-prata" class="amount"> 0,00</span></strong></div>
+              <img src="img/outlined-content-silver-negative.svg" class="icon">
+              <div class="value-to-gain">
+                <div>
+                  <span class="level">Silver</span>
+
+                  <div class="amount">
+                    <div class="mark-1">
+                      <strong><span id="ganhos-natura-silver" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Natura</span>
+                    </div>
+                    <div class="mark-2">
+                      <strong><span id="ganhos-avon-silver" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Avon</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </li>
             <li class="bronze">
-              <img src="img/outlined-content-bronze-negative.svg" class="icon"><div class="value-to-gain"><span class="level">Bronze<br>R$ <strong><span id="ganhos-bronze" class="amount"> 0,00</span></strong></div>
+              <img src="img/outlined-content-bronze-negative.svg" class="icon">
+              <div class="value-to-gain">
+                <div>
+                  <span class="level">Bronze</span>
+
+                  <div class="amount">
+                    <div class="mark-1">
+                      <strong><span id="ganhos-natura-bronze" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Natura</span>
+                    </div>
+                    <div class="mark-2">
+                      <strong><span id="ganhos-avon-bronze" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Avon</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </li>
             <li class="seed">
-              <img src="img/outlined-content-seed-negative.svg" class="icon"><div class="value-to-gain"><span class="level">Semente<br>R$ <strong><span id="ganhos-semente" class="amount"> 0,00</span></strong></div>
+              <img src="img/outlined-content-seed-negative.svg" class="icon">
+              <div class="value-to-gain">
+                <div>
+                  <span class="level">Semente</span>
+
+                  <div class="amount">
+                    <div class="mark-1">
+                      <strong><span id="ganhos-natura-seed" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Natura</span>
+                    </div>
+                    <div class="mark-2">
+                      <strong><span id="ganhos-avon-seed" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Avon</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </li>
 
           </ul>
@@ -103,66 +171,67 @@
 
   <!-- Script para Atualizar Ganhos e Imagens -->
   <script>
-    
-    const comissoes = {
-      'semente': { 'natura': 0.20, 'avon': 0.20 },
-      'bronze': { 'natura': 0.30, 'avon': 0.30 },
-      'prata': { 'natura': 0.30, 'avon': 0.35 },
-      'ouro': { 'natura': 0.32, 'avon': 0.38 },
-      'diamante': { 'natura': 0.35, 'avon': 0.38 }
-    };
-  
-    const produtos = {
-      50: { 'imagem': 'img/produto-50.png', 'nome': 'Produto Inicial', 'valor': '50,00' },
-      100: { 'imagem': 'img/produto-100.png', 'nome': 'Presente Natura Tododia Algodão Mimo', 'valor': '100,00' },
-      150: { 'imagem': 'img/produto-150.png', 'nome': 'Creme Natura', 'valor': '150,00' },
-      200: { 'imagem': 'img/produto-200.png', 'nome': 'Perfume Natura Homem', 'valor': '200,00' },
-      250: { 'imagem': 'img/produto-250.png', 'nome': 'Kit Natura Ekos', 'valor': '250,00' },
-      300: { 'imagem': 'img/produto-300.png', 'nome': 'Presente Natura Essencial', 'valor': '300,00' },
-      350: { 'imagem': 'img/produto-350.png', 'nome': 'Presente Natura Una', 'valor': '350,00' },
-      400: { 'imagem': 'img/produto-400.png', 'nome': 'Presente Natura Tododia', 'valor': '400,00' },
-      450: { 'imagem': 'img/produto-450.png', 'nome': 'Presente Natura Lumina', 'valor': '450,00' },
-      500: { 'imagem': 'img/produto-500.png', 'nome': 'Presente Natura Ekos Priprioca', 'valor': '500,00' }
-    };
-  
-    const slider = document.getElementById('volume-vendas');
-    const sliderValue = document.getElementById('slider-value');
-    const imagemProduto = document.getElementById('imagem-produto');
-    const produtoLegenda = document.getElementById('product-subtitle');
-  
-    function atualizarGanhos() {
-      const volumeVendas = parseFloat(slider.value);
-      sliderValue.textContent = `R$ ${volumeVendas}`;
-  
-      let previousKey = 0;
-      Object.keys(produtos).sort((a, b) => a - b).forEach(key => {
-        if (volumeVendas >= key) {
-          previousKey = key; // Atualiza a chave do produto que deverá ser mostrado
+    document.addEventListener('DOMContentLoaded', () => {
+      const comissoes = {
+        'seed': { 'natura': 0.20, 'avon': 0.20 },
+        'bronze': { 'natura': 0.30, 'avon': 0.30 },
+        'silver': { 'natura': 0.30, 'avon': 0.35 },
+        'gold': { 'natura': 0.32, 'avon': 0.38 },
+        'diamond': { 'natura': 0.35, 'avon': 0.38 }
+      };
+
+      const produtos = {
+        50: { 'imagem': 'img/produto-50.png', 'nome': 'Produto Inicial', 'valor': 'R$ 50,00' },
+        100: { 'imagem': 'img/produto-100.png', 'nome': 'Presente Natura Tododia Algodão Mimo', 'valor': 'R$ 29,90' },
+        150: { 'imagem': 'img/produto-150.png', 'nome': 'Creme Natura', 'valor': 'R$ 59,90' },
+        200: { 'imagem': 'img/produto-200.png', 'nome': 'Perfume Natura Homem', 'valor': 'R$ 89,90' },
+        250: { 'imagem': 'img/produto-250.png', 'nome': 'Kit Natura Ekos', 'valor': 'R$ 119,90' },
+        300: { 'imagem': 'img/produto-300.png', 'nome': 'Presente Natura Essencial', 'valor': 'R$ 149,90' },
+        350: { 'imagem': 'img/produto-350.png', 'nome': 'Presente Natura Una', 'valor': 'R$ 199,90' },
+        400: { 'imagem': 'img/produto-400.png', 'nome': 'Presente Natura Tododia', 'valor': 'R$ 239,90' },
+        450: { 'imagem': 'img/produto-450.png', 'nome': 'Presente Natura Lumina', 'valor': 'R$ 279,90' },
+        500: { 'imagem': 'img/produto-500.png', 'nome': 'Presente Natura Ekos Priprioca', 'valor': 'R$ 319,90' }
+      };
+
+      const slider = document.getElementById('volume-vendas');
+      const sliderValue = document.getElementById('slider-value');
+      const imagemProduto = document.getElementById('imagem-produto');
+      const produtoLegenda = document.getElementById('produto-legenda');
+
+      function atualizarGanhos() {
+        const volumeVendas = parseFloat(slider.value);
+        sliderValue.textContent = `R$ ${volumeVendas}`;
+
+        let previousKey = 0;
+        Object.keys(produtos).sort((a, b) => a - b).forEach(key => {
+          if (volumeVendas >= key) {
+            previousKey = key; // Atualiza a chave do produto que deverá ser mostrado
+          }
+        });
+
+        const produto = produtos[previousKey];
+
+        if (imagemProduto.src !== produto['imagem']) {
+          imagemProduto.classList.add('fade-image');
+          setTimeout(() => {
+            imagemProduto.src = produto['imagem'];
+            imagemProduto.alt = produto['nome'];
+            produtoLegenda.innerHTML = `${produto['nome']}<br>${produto['valor']}`;
+            imagemProduto.classList.remove('fade-image');
+          }, 500);
         }
-      });
-  
-      const produto = produtos[previousKey];
-  
-      if (imagemProduto.src !== produto['imagem']) {
-        imagemProduto.classList.add('fade-image');
-        setTimeout(() => {
-          imagemProduto.src = produto['imagem'];
-          imagemProduto.alt = produto['nome'];
-          produtoLegenda.innerHTML = `${produto['nome']}<br>R$ <strong>${produto['valor']}</strong>`;
-          imagemProduto.classList.remove('fade-image');
-        }, 100);
+
+        Object.keys(comissoes).forEach(nivel => {
+          const ganhoNatura = (volumeVendas * comissoes[nivel]['natura']).toFixed(0);
+          const ganhoAvon = (volumeVendas * comissoes[nivel]['avon']).toFixed(0);
+          document.getElementById(`ganhos-natura-${nivel}`).textContent = `R$ ${ganhoNatura}`;
+          document.getElementById(`ganhos-avon-${nivel}`).textContent = `R$ ${ganhoAvon}`;
+        });
       }
-  
 
-      Object.keys(comissoes).forEach(nivel => {
-        const ganhoNatura = (volumeVendas * comissoes[nivel]['natura']).toFixed(2);
-        const ganhoAvon = (volumeVendas * comissoes[nivel]['avon']).toFixed(2);
-        document.getElementById(`ganhos-${nivel}`).textContent = `${ganhoNatura} | ${ganhoAvon}`;
-      });
-
-
-    }
-  
-    slider.addEventListener('input', atualizarGanhos);
-    window.onload = atualizarGanhos; // Assegura a inicialização correta
+      slider.addEventListener('input', atualizarGanhos);
+      window.onload = atualizarGanhos; // Assegura a inicialização correta
+    });
   </script>
+</body>
+</html>
