@@ -44,12 +44,13 @@
       <!-- Slider -->
       <div class="calculator">
         <input id="volume-vendas" class="form-slider" type="range" min="50" max="500" step="50" value="100">
-        <h3 class="slider-value" id="slider-value">R$ 100</h3>
+        <div class="slider-value" id="slider-value">R$ 100</div>
       </div>
 
       <!-- Sugestão de produtos e ganhos -->
       <div class="product-container">
 
+        
         <div class="promo">
           <img id="imagem-produto" class="imagem-produto" src="img/produto-100.png" alt="Produto inicial">
           <div class="promo-subtitle">
@@ -63,10 +64,11 @@
           <ul id="results-list" class="results-list">
 
             <li class="diamond">
+              <span class="level-mobile">Diamante</span>
               <img src="img/outlined-content-diamond-negative.svg" class="icon">
               <div class="value-to-gain">
                 <div>
-                  <span class="level">Diamante</span>
+                  <span class="level">Diamante</span><br>
 
                   <div class="amount">
                     <div class="mark-1">
@@ -83,10 +85,11 @@
               </div>
             </li>
             <li class="gold">
+              <span class="level-mobile">Ouro</span>
               <img src="img/outlined-content-gold-negative.svg" class="icon">
               <div class="value-to-gain">
                 <div>
-                  <span class="level">Ouro</span>
+                  <span class="level">Ouro</span><br>
 
                   <div class="amount">
                     <div class="mark-1">
@@ -103,10 +106,11 @@
               </div>
             </li>
             <li class="silver">
+              <span class="level-mobile">Prata</span>
               <img src="img/outlined-content-silver-negative.svg" class="icon">
               <div class="value-to-gain">
                 <div>
-                  <span class="level">Silver</span>
+                  <span class="level">Silver</span><br>
 
                   <div class="amount">
                     <div class="mark-1">
@@ -123,10 +127,11 @@
               </div>
             </li>
             <li class="bronze">
+              <span class="level-mobile">Bronze</span>
               <img src="img/outlined-content-bronze-negative.svg" class="icon">
               <div class="value-to-gain">
                 <div>
-                  <span class="level">Bronze</span>
+                  <span class="level">Bronze</span><br>
 
                   <div class="amount">
                     <div class="mark-1">
@@ -143,10 +148,11 @@
               </div>
             </li>
             <li class="seed">
+              <span class="level-mobile">Semente</span>
               <img src="img/outlined-content-seed-negative.svg" class="icon">
               <div class="value-to-gain">
                 <div>
-                  <span class="level">Semente</span>
+                  <span class="level">Semente</span><br>
 
                   <div class="amount">
                     <div class="mark-1">
@@ -181,22 +187,22 @@
       };
 
       const produtos = {
-        50: { 'imagem': 'img/produto-50.png', 'nome': 'Produto Inicial', 'valor': 'R$ 50,00' },
-        100: { 'imagem': 'img/produto-100.png', 'nome': 'Presente Natura Tododia Algodão Mimo', 'valor': 'R$ 29,90' },
-        150: { 'imagem': 'img/produto-150.png', 'nome': 'Creme Natura', 'valor': 'R$ 59,90' },
-        200: { 'imagem': 'img/produto-200.png', 'nome': 'Perfume Natura Homem', 'valor': 'R$ 89,90' },
-        250: { 'imagem': 'img/produto-250.png', 'nome': 'Kit Natura Ekos', 'valor': 'R$ 119,90' },
-        300: { 'imagem': 'img/produto-300.png', 'nome': 'Presente Natura Essencial', 'valor': 'R$ 149,90' },
-        350: { 'imagem': 'img/produto-350.png', 'nome': 'Presente Natura Una', 'valor': 'R$ 199,90' },
-        400: { 'imagem': 'img/produto-400.png', 'nome': 'Presente Natura Tododia', 'valor': 'R$ 239,90' },
-        450: { 'imagem': 'img/produto-450.png', 'nome': 'Presente Natura Lumina', 'valor': 'R$ 279,90' },
-        500: { 'imagem': 'img/produto-500.png', 'nome': 'Presente Natura Ekos Priprioca', 'valor': 'R$ 319,90' }
+        50: { 'imagem': 'img/produto-50.png', 'nome': 'Produto Inicial', 'valor': '50,00' },
+        100: { 'imagem': 'img/produto-100.png', 'nome': 'Presente Natura Tododia Algodão Mimo', 'valor': '100,00' },
+        150: { 'imagem': 'img/produto-150.png', 'nome': 'Creme Natura', 'valor': '150,00' },
+        200: { 'imagem': 'img/produto-200.png', 'nome': 'Perfume Natura Homem', 'valor': '200,00' },
+        250: { 'imagem': 'img/produto-250.png', 'nome': 'Kit Natura Ekos', 'valor': '250,00' },
+        300: { 'imagem': 'img/produto-300.png', 'nome': 'Presente Natura Essencial', 'valor': '300,00' },
+        350: { 'imagem': 'img/produto-350.png', 'nome': 'Presente Natura Una', 'valor': '350,00' },
+        400: { 'imagem': 'img/produto-400.png', 'nome': 'Presente Natura Tododia', 'valor': '400,00' },
+        450: { 'imagem': 'img/produto-450.png', 'nome': 'Presente Natura Lumina', 'valor': '450,00' },
+        500: { 'imagem': 'img/produto-500.png', 'nome': 'Presente Natura Ekos Priprioca', 'valor': '500,00' }
       };
 
       const slider = document.getElementById('volume-vendas');
       const sliderValue = document.getElementById('slider-value');
       const imagemProduto = document.getElementById('imagem-produto');
-      const produtoLegenda = document.getElementById('produto-legenda');
+      const produtoLegenda = document.getElementById('product-subtitle');
 
       function atualizarGanhos() {
         const volumeVendas = parseFloat(slider.value);
@@ -216,9 +222,9 @@
           setTimeout(() => {
             imagemProduto.src = produto['imagem'];
             imagemProduto.alt = produto['nome'];
-            produtoLegenda.innerHTML = `${produto['nome']}<br>${produto['valor']}`;
+            produtoLegenda.innerHTML = `${produto['nome']}<br>R$ <strong>${produto['valor']}</strong>`;
             imagemProduto.classList.remove('fade-image');
-          }, 500);
+          }, 100);
         }
 
         Object.keys(comissoes).forEach(nivel => {

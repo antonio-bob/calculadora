@@ -151,10 +151,11 @@ body {
   margin: 0;
   padding: 0 var(--spacingStandard) 0 0;
   flex: 1;
+
   font-size: var(--headline5);
+  font-weight: bold; 
   color: var(--colorSecondary);
 }
-
 
 .categoria-produto {
   margin: 0px ;
@@ -164,8 +165,6 @@ body {
   justify-content: space-between;
   margin-bottom: var(--spacingStandard);
 }
-
-
 
 .imagem-produto {
   margin: 0px ;
@@ -256,7 +255,7 @@ body {
   flex-direction: column;
   list-style: none;
 
-  background-color: aquamarine;
+  /*background-color: aquamarine;*/
 }
 
 .results-list .diamond {
@@ -368,7 +367,14 @@ body {
 }
 
 .results-list li .level{
+  display:inline;
   font-size: var(--caption);
+  letter-spacing: 0.05em;
+}
+
+.results-list li .level-mobile{
+  display: none;
+  font-size: 6px;
   letter-spacing: 0.05em;
 }
 
@@ -393,27 +399,33 @@ body {
   }
 
   .right-section {
+    padding: 0px;
+    margin: 0px;
+
     display: box;
     text-align: center;
-    padding: 0;
-    margin: 0;
   }
 
   .product-container {
-    flex: 2;
+    margin: 0;
+    padding: 0;
     flex-direction: column; /* row no desktop e column no mobile */
+    justify-content: space-between;
+    align-items: center;
   }
-  
-.calculator .form-slider {
-  flex: 2;
-}
 
-.calculator. slider-value {
-  flex: 1;
-  font-size: var(--headline6);
-}
+  
+  .calculator .form-slider {
+  }
+
+  .calculator .slider-value {
+    padding: 0 var(--spacingTiny) 0 0;
+    font-size: var(--headline5);
+  }
 
   .promo {
+    margin: 0px;
+    padding: 0px;
     display: flex; /* 2 no desktop e 1 no mobile*/
     flex-direction: column;
     justify-content: center;
@@ -421,17 +433,28 @@ body {
   
     text-align: center;
   }
+
+
   
   .promo-subtitle {
   }
   
   .promo-subtitle .tag-text {
   }
+
+  .imagem-produto {
+    height: 250px;
+  
+  }
   
   .earnings-result {
-    flex: 1;
-    height: 250px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    
+    background-color: aquamarine;
   }
+
   
   .resultado-title {
   }
@@ -506,9 +529,18 @@ body {
     text-align: center;
     font-size: var(--body1);
   }
-  
+
   .results-list li .level{
+    display:none;
     font-size: var(--caption);
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
+  }
+  
+  .results-list li .level-mobile{
+    margin: 0;
+    padding: 0;
+    display: inline;
+    font-size: 10px;
+    letter-spacing: 0.05em; 
   }
 }
