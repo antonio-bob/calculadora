@@ -399,6 +399,7 @@ body {
   }
 
   .right-section {
+    width: 94%;
     padding: 0px;
     margin: 0px;
 
@@ -448,11 +449,12 @@ body {
   }
   
   .earnings-result {
-    width: 100%;
+    width: 80%;
+    flex-direction:row;
     justify-content: center;
     align-items: flex-end;
-    
-    background-color: aquamarine;
+
+    /*background-color: aquamarine;*/
   }
 
   
@@ -460,45 +462,64 @@ body {
   }
   
   .results-list {
+    width: 80%;
     display: inline-flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
   }
+
   
 
   .results-list .diamond {
+    flex: 1;
+    align-items: center;
     margin: 0;
+    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
 
-    width: var(--spacingXLarge);
+    width: auto;
     height: 100%;
+
+    text-align: center;
   }
   
   .results-list .gold{
+    flex: 1;
+    align-items: center;
     margin: 0;
+    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
 
-    width: var(--spacingXLarge);
+    width: auto;
     height: 95%;
   }
   
   .results-list .silver {
+    flex: 1;
+    align-items: center;
     margin: 0;
+    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
 
-    width: var(--spacingXLarge);
+    width: auto;
     height: 90%;
   }
   
   .results-list .bronze {
+    flex: 1;
+    align-items: center;
     margin: 0;
+    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
 
-    width: var(--spacingXLarge);
+    width: auto;
     height: 85%;
   }
   
   .results-list .seed {
+    flex: 1;
+    align-items: center;
     margin: 0;
+    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
 
-    width: var(--spacingXLarge);
+    width: auto;
     height: 80%;
   }
   
@@ -517,8 +538,10 @@ body {
   }
   
   .results-list li .icon {
+    margin: 0 var(--spacingMicro); 
+    padding: 0;/*
     margin: var(--spacingMicro); 
-    padding: var(--spacingTiny);
+    padding: var(--spacingTiny);*/
   }
   
   .results-list li .value-to-gain {
@@ -539,6 +562,7 @@ body {
   .results-list li .level-mobile{
     margin: 0;
     padding: 0;
+
     display: inline;
     font-size: 10px;
     letter-spacing: 0.05em; 
