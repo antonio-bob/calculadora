@@ -334,13 +334,42 @@ body {
 }
 
 .results-list li .amount {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.mark-1 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacingMicro);
+
+  /* Remova a borda inicial */
+  border-style: none solid none none;
+  border-color: var(--colorNeutral200);
+}
+
+.mark-2 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacingMicro);
+
+  /* Remova a borda inicial */
+  border-style: none;
+}
+
+.amount-number {
   text-align: center;
   font-size: var(--body1);
 }
 
+.amount-mark {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
 .results-list li .level{
   font-size: var(--caption);
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
 }
 
 /* Comportamento mobile */

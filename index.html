@@ -63,7 +63,24 @@
           <ul id="results-list" class="results-list">
 
             <li class="diamond">
-              <img src="img/outlined-content-diamond-negative.svg" class="icon"><div class="value-to-gain"><span class="level">Diamante</span><br>R$ <strong><span id="ganhos-diamante" class="amount"> 0,00</span></strong></div>
+              <img src="img/outlined-content-diamond-negative.svg" class="icon">
+              <div class="value-to-gain">
+                <div>
+                  <span class="level">Diamante</span><br>
+
+                  <div class="amount">
+                    <div class="mark-1">
+                      <strong><span id="ganhos-diamante-natura" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Natura</span>
+                    </div>
+                    <div class="mark-2">
+                      <strong><span id="ganhos-diamante-avon" class="amount-number"> 0,00</span></strong>
+                      <span class="amount-mark">Avon</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </li>
             <li class="gold">
               <img src="img/outlined-content-gold-negative.svg" class="icon"><div class="value-to-gain"><span class="level">Ouro<br>R$ <strong><span id="ganhos-ouro" class="amount"> 0,00</span></strong></div>
@@ -86,12 +103,13 @@
 
   <!-- Script para Atualizar Ganhos e Imagens -->
   <script>
+    
     const comissoes = {
-      'semente': 0.20,
-      'bronze': 0.30,
-      'prata': 0.30,
-      'ouro': 0.32,
-      'diamante': 0.35
+      'semente': { 'natura': 0.20, 'avon': 0.20 },
+      'bronze': { 'natura': 0.30, 'avon': 0.30 },
+      'prata': { 'natura': 0.30, 'avon': 0.35 },
+      'ouro': { 'natura': 0.32, 'avon': 0.38 },
+      'diamante': { 'natura': 0.35, 'avon': 0.38 }
     };
   
     const produtos = {
@@ -135,9 +153,14 @@
         }, 100);
       }
   
+
       Object.keys(comissoes).forEach(nivel => {
-        document.getElementById(`ganhos-${nivel}`).textContent = `${(volumeVendas * comissoes[nivel]).toFixed(0)} | ${(volumeVendas * comissoes[nivel]).toFixed(0)}`;
+        const ganhoNatura = (volumeVendas * comissoes[nivel]['natura']).toFixed(2);
+        const ganhoAvon = (volumeVendas * comissoes[nivel]['avon']).toFixed(2);
+        document.getElementById(`ganhos-${nivel}`).textContent = `${ganhoNatura} | ${ganhoAvon}`;
       });
+
+
     }
   
     slider.addEventListener('input', atualizarGanhos);
