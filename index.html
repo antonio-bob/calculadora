@@ -38,24 +38,25 @@
     </section>
 
     <section id="calculadora-ganhos" class="right-section">
-      <h1 class="calculator-title">Simule seus ganhos na Consultoria de Beleza</h1>
-      <!--label for="volume-vendas" class="form-label">Ajuste o valor de suas vendas e veja a estimativa de lucro!</label-->
-
+      <div class="calculator-title">
+        <h1>Simule seus ganhos na Consultoria de Beleza</h1>
+        <!--label for="volume-vendas" class="form-label">Ajuste o valor de suas vendas e veja a estimativa de lucro!</label-->
+      </div>
+      
       <!-- Slider -->
       <div class="calculator">
-        <input id="volume-vendas" class="form-slider" type="range" min="50" max="500" step="50" value="100">
-        <div class="slider-value" id="slider-value">R$ 100</div>
+        <input id="volume-vendas" class="calculator-slider" type="range" min="50" max="500" step="50" value="100">
+        <div class="calculator-slider-value" id="calculator-slider-value">R$ 100</div>
       </div>
 
       <!-- Sugestão de produtos e ganhos -->
-      <div class="product-container">
-
+      <div class="promo-container">
         
         <div class="promo">
-          <img id="imagem-produto" class="imagem-produto" src="img/produto-100.png" alt="Produto inicial">
+          <img id="promo-image" class="promo-image" src="img/produto-100.png" alt="Produto inicial">
           <div class="promo-subtitle">
-            <img src="img/outlined-finance-tagdiscount.svg">
-            <div class="tag-text"><p id="product-subtitle">Presente Natura Tododia Algodão Mimo<strong>R$ 29,90</strong></p></div>
+            <img class="promo-icon" src="img/outlined-finance-tagdiscount.svg">
+            <div class="promo-tag"><p id="product-subtitle">Presente Natura Tododia Algodão Mimo<strong>R$ 29,90</strong></p></div>
           </div>
         </div>
 
@@ -64,8 +65,10 @@
           <ul id="results-list" class="results-list">
 
             <li class="diamond">
-              <span class="level-mobile">Diamante</span>
-              <img src="img/outlined-content-diamond-negative.svg" class="icon">
+              <div>
+                <span class="level-mobile">Diamante</span>
+                <img src="img/outlined-content-diamond-negative.svg" class="icon">
+              </div>
               <div class="value-to-gain">
                 <div>
                   <span class="level">Diamante</span><br>
@@ -85,8 +88,10 @@
               </div>
             </li>
             <li class="gold">
-              <span class="level-mobile">Ouro</span>
-              <img src="img/outlined-content-gold-negative.svg" class="icon">
+              <div>
+                <span class="level-mobile">Ouro</span>
+                <img src="img/outlined-content-gold-negative.svg" class="icon">
+              </div>
               <div class="value-to-gain">
                 <div>
                   <span class="level">Ouro</span><br>
@@ -106,8 +111,10 @@
               </div>
             </li>
             <li class="silver">
+              <div>
               <span class="level-mobile">Prata</span>
               <img src="img/outlined-content-silver-negative.svg" class="icon">
+            </div>
               <div class="value-to-gain">
                 <div>
                   <span class="level">Silver</span><br>
@@ -127,8 +134,10 @@
               </div>
             </li>
             <li class="bronze">
+              <div>
               <span class="level-mobile">Bronze</span>
               <img src="img/outlined-content-bronze-negative.svg" class="icon">
+            </div>
               <div class="value-to-gain">
                 <div>
                   <span class="level">Bronze</span><br>
@@ -148,8 +157,10 @@
               </div>
             </li>
             <li class="seed">
+              <div>
               <span class="level-mobile">Semente</span>
               <img src="img/outlined-content-seed-negative.svg" class="icon">
+              </div>
               <div class="value-to-gain">
                 <div>
                   <span class="level">Semente</span><br>
@@ -200,8 +211,8 @@
       };
 
       const slider = document.getElementById('volume-vendas');
-      const sliderValue = document.getElementById('slider-value');
-      const imagemProduto = document.getElementById('imagem-produto');
+      const sliderValue = document.getElementById('calculator-slider-value');
+      const imagemProduto = document.getElementById('promo-image');
       const produtoLegenda = document.getElementById('product-subtitle');
 
       function atualizarGanhos() {

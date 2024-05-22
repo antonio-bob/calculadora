@@ -1,9 +1,9 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--colorBackground);
-  color: var(--colorOnBackground);
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--colorOnBackground);
+  background-color: var(--colorBackground);
 }
 
 /* Container Principal - Colunas */
@@ -14,13 +14,11 @@ body {
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
-  
-  margin: 0;
-  padding: var(--spacingSemi);
   gap: var(--spacingLarge);
-  
 
-  background-image: url('../img/Asset 4.svg');
+  padding: var(--spacingSemi);
+  
+  background-image: url('../img/background.svg');
   background-position:center;
   background-size:cover;
   background-repeat: no-repeat;
@@ -29,7 +27,6 @@ body {
 /* Título e Subtítulo à Esquerda */
 .left-section {
   flex: 1;
-  text-align: left;
 }
 
 .section-title {
@@ -41,63 +38,56 @@ body {
 .instructions {
   font-size: 18px;
   font-weight: 300;
+  letter-spacing: 0.03em;
   color: var(--colorOnPrimary);
   margin-bottom: var(--spacingSemi);
-  letter-spacing: 0.03em;
 }
 
 .buttonOutlined {
-  background-color: #E5004B;
-  color: var(--colorOnPrimary);
   border: solid;
   border-color: var(--colorOnPrimary);
   border-radius: var(--buttonBorderRadius);
+
   padding: var(--spacingSmall) var(--buttonPaddingX);
   margin: 0 var(--spacingMicro);
+
   font-size: var(--body1);
+  color: var(--colorOnPrimary);
+  background-color: var(--colorPinkAvon);
+
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .buttonOutlined:hover {
-  background-color: var(--colorPrimaryLight);
+  background-color: var(--colorPrimary);
 }
 
 /* Calculadora à Direita */
 .right-section {
-  padding: 0;
-  margin: 0;
-
   flex: 1;
-  justify-content:center;
-  align-items: center;
   
   background-color: var(--colorSurface);
-  border-radius: var(--borderRadiusSmall);
+  border-radius: var(--borderRadiusLarge);
   box-shadow: var(--elevationLarge);
-  
-  text-align: center;
 }
 
 .calculator-title{
+  text-align: center;
   padding: var(--spacingStandard);
-  margin: 0;
   color: var(--colorSecondary);
 }
 
 .form-label {
   font-size: var(--body1);
-  margin-bottom: var(--spacingTiny);
-  text-align: left;
   color: var(--colorSecondary);
+  text-align: left;
 }
 
 .calculator {
-  padding: 0;
-  margin: 0 26px;
-
-  width: inherit;
   height: 64px;
+
+  margin: 0 var(--spacingStandard);
 
   display: flex;
   flex-direction: row;
@@ -107,15 +97,12 @@ body {
   border-style: solid;
   border-color: var(--colorNeutral75);
   border-radius: var(--buttonBorderRadius);
-  /*margin: var(--spacingSemi) 0;*/
 }
 
-.calculator .form-slider {
-  padding: 0;
-  margin: 0 var(--spacingStandard);
+.calculator .calculator-slider {
+  flex: 4;
+  margin-left: var(--spacingStandard);
 
-  flex: 3;
-  /*width: 75%;*/
   height: 2px;
   cursor: pointer;
 
@@ -130,11 +117,11 @@ body {
 }
 
 
-.calculator .form-slider:hover {
+.calculator .calculator-slider:hover {
   opacity: 1;
 }
 
-.form-slider::-webkit-slider-thumb {
+.calculator-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
 
@@ -147,13 +134,13 @@ body {
   background: url('../img/filled-navigation-move.svg');
 }
 
-.calculator .slider-value {
-  margin: 0;
-  padding: 0 var(--spacingStandard) 0 0;
+.calculator .calculator-slider-value {
   flex: 1;
+  padding-right: var(--spacingStandard);
 
   font-size: var(--headline5);
-  font-weight: bold; 
+  font-weight: bold;
+  text-align: right;
   color: var(--colorSecondary);
 }
 
@@ -166,100 +153,68 @@ body {
   margin-bottom: var(--spacingStandard);
 }
 
-.imagem-produto {
-  margin: 0px ;
-  padding: 0px ;
-
-  height: 300px;
-
-  border-radius: var(--borderRadiusLarge);
-  transition: opacity 0.3s ease-in-out; 
-  opacity: 1; 
-
-}
-
 /* Clase para suavizar a troca de imagem */
 .fade-image {
   opacity: 0;
 }
 
-.product-container {
-  margin: 0px;
-  padding: 0px;
-
+.promo-container {
   display: flex;
-  flex-direction: row; /* row no desktop e column no mobile */
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .promo {
-  margin: 0px;
-  padding: 0px;
+  flex: 2; 
 
   display: flex;
-  flex: 2; /* 2 no desktop e 1 no mobile*/
   flex-direction: column;
   justify-content:flex-end;
   align-items:center;
 
-  text-align: center;
+}
+
+.promo-image {
+  height: 300px;
+
+  transition: opacity 0.3s ease-in-out; 
+  opacity: 1; 
+
 }
 
 .promo-subtitle {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content:center;
+  align-items:center;
 
   border-style: solid none none none;
   border-color: var(--colorNeutral200);
 }
 
-.promo-subtitle .tag-text {
+.promo-icon {
+  width: var(--spacingStandard);
+  height: var(--spacingStandard);
+
+  padding: 0 8px 0 0;
+}
+
+.promo-subtitle .promo-tag {
   font-size: var(--caption);
   color: var(--colorSecondary);
 
   text-align: left;
-  padding-left: 8px;
 }
 
 .earnings-result {
-  margin: 0px;
-  padding: 0px;
-
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.resultado-title {
-  margin: 0px ;
-  padding: 0px ;
-
-  font-size: var(--headline6);
-  color: var(--colorOnSurface);
 }
 
 .results-list {
-  width: 100%;
-  height: auto;
-
-  margin: 0px ;
-  padding: 0px ;
-  
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-
-  /*background-color: aquamarine;*/
 }
 
 .results-list .diamond {
-  margin-top: 0px;
   margin-left: 0px;
 
   height: var(--spacingXLarge);
@@ -268,47 +223,36 @@ body {
 
 
 .results-list .gold{
-  margin-top: 0px;
   margin-left: var(--spacingTiny);
 
-  width: auto;
   height: var(--spacingXLarge);
   background-color: var(--colorLevelGold);
 }
 
 .results-list .silver {
-  margin-top: 0px;
   margin-left: var(--spacingSmall);
 
-  width: auto;
   height: var(--spacingXLarge);
   background-color: var(--colorLevelSilver);
 }
 
 .results-list .bronze {
-  margin-top: 0px;
   margin-left: var(--spacingStandard);
 
-  width: auto;
   height: var(--spacingXLarge);
   background-color: var(--colorLevelBronze);
 }
 
 .results-list .seed {
-  margin-top: 0px;
   margin-left: var(--spacingSemi);
-
-  width: auto;
+  
   height: var(--spacingXLarge);
   background-color: var(--colorLevelSeed);
 }
 
 .results-list li {
-  padding: 0px; /*var(--spacingMicro) var(--spacingTiny) var(--spacingMicro) var(--spacingMicro);*/
-  margin: 0px;
-  
-  display: flex; /* inline-flex no desktop e flex no mobile */
-  flex-direction: row; /* row no desktop e column-reverse no mobile */
+  display: flex; 
+  flex-direction: row; 
   align-items: center; 
   justify-content: space-between;
   
@@ -316,25 +260,26 @@ body {
   font-size: var(--body1);
 
   color: var(--colorOnPrimary);
-  /*border-radius: var(--buttonBorderRadius) var(--buttonBorderRadius) 0 0;*/ /* Ativar no mobile */
-  border-radius: var(--buttonBorderRadius) 0 0 var(--buttonBorderRadius); /* Ativar no desktop */
+  
+  border-radius: var(--buttonBorderRadius) 0 0 var(--buttonBorderRadius); 
 }
 
 .results-list li .icon {
   width: var(--spacingSemi); 
   height: var(--spacingSemi); 
   
-  margin: var(--spacingMicro); 
-  padding: var(--spacingMicro);
+  margin-left: var(--spacingSmall);
 }
 
 .results-list li .value-to-gain {
+  width: 140px;
   text-align: center;
 }
 
 .results-list li .amount {
   display: inline-flex;
   flex-direction: row;
+  gap: 4px;
 }
 
 .mark-1 {
@@ -370,12 +315,16 @@ body {
   display:inline;
   font-size: var(--caption);
   letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0;
 }
 
 .results-list li .level-mobile{
   display: none;
   font-size: 6px;
   letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0;
 }
 
 /* Comportamento mobile */
@@ -383,177 +332,164 @@ body {
 @media (max-width: 768px) {
   /* Container Principal - Colunas */
   .main-container {
-    background-color: var(--colorPrimary);
     flex-direction: column;
     gap: var(--spacingMedium);
     padding: var(--spacingMedium);
+    background-image: none;
+    background-color: var(--colorPinkAvon);
   }
 
   /* Ajustes para a seção esquerda e direita */
 
   .left-section {
-    display: box;
     text-align: center;
-    padding: var(--spacingStandard);
-    margin: var(--spacingStandard);
+    padding: var(--spacingStandard) var(--spacingStandard) var(--spacingXLarge) var(--spacingStandard);
   }
 
   .right-section {
-    width: 94%;
-    padding: 0px;
-    margin: 0px;
-
-    display: box;
+    width: 90%;
     text-align: center;
   }
 
-  .product-container {
-    margin: 0;
-    padding: 0;
+  .promo-container {
     flex-direction: column; /* row no desktop e column no mobile */
-    justify-content: space-between;
-    align-items: center;
   }
 
   
-  .calculator .form-slider {
+  .calculator .calculator-slider {
+    flex: 3;
   }
 
-  .calculator .slider-value {
-    padding: 0 var(--spacingTiny) 0 0;
+  .calculator .calculator-slider-value {
+    padding-right: var(--spacingStandard);
     font-size: var(--headline5);
   }
 
   .promo {
-    margin: 0px;
-    padding: 0px;
-    display: flex; /* 2 no desktop e 1 no mobile*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
+    height: 280px;
+    flex-direction: row;
+    gap: 8px;
+
     text-align: center;
+
+    background-color: #FFFFFF;
   }
 
-
+  .promo-image {
+    flex: 2;
+  }
   
   .promo-subtitle {
-  }
-  
-  .promo-subtitle .tag-text {
+    flex: 1;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0 8px;
+    margin: 0;
+
+    border-style: none none none solid;
   }
 
-  .imagem-produto {
-    height: 250px;
+  .promo-icon {
+    padding: 0;
+  }
   
+  .promo-subtitle .promo-tag {
   }
   
   .earnings-result {
-    width: 80%;
-    flex-direction:row;
-    justify-content: center;
-    align-items: flex-end;
-
-    /*background-color: aquamarine;*/
-  }
-
-  
-  .resultado-title {
+    width: 100%;
   }
   
   .results-list {
-    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
     display: inline-flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    justify-content: center;
+    
   }
 
-  
-
   .results-list .diamond {
+    height: 170px;
     flex: 1;
     align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
-
-    width: auto;
-    height: 100%;
-
-    text-align: center;
   }
   
   .results-list .gold{
+    height: 162px;
     flex: 1;
     align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
-
-    width: auto;
-    height: 95%;
   }
   
   .results-list .silver {
+    height: 156px;
     flex: 1;
     align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
-
-    width: auto;
-    height: 90%;
   }
   
   .results-list .bronze {
+    height: 148px;
     flex: 1;
     align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
-
-    width: auto;
-    height: 85%;
   }
   
   .results-list .seed {
+    height: 140px;
     flex: 1;
     align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
-
-    width: auto;
-    height: 80%;
   }
   
   .results-list li {
-    width: 75px;
-    height: 250px; /* 64px no desktop e auto no mobile */
-    
-    margin-left: 0px !important;
+
     display: inline-flex; /* flex no desktop e inline-flex no mobile */
     flex-direction: column; /* row no desktop e column no mobile */
+    align-items: flex-end;
+    justify-content: flex-end;
 
-  align-items: flex-end;
-  justify-content: flex-end;
-    border-radius: var(--buttonBorderRadius) var(--buttonBorderRadius) 0 0; /* Ativar no mobile */
-    /*border-radius: var(--buttonBorderRadius) 0 0 var(--buttonBorderRadius);*/ /* Ativar no desktop */
+    border-radius: var(--buttonBorderRadius) var(--buttonBorderRadius) 0 0;
   }
   
   .results-list li .icon {
     margin: 0 var(--spacingMicro); 
-    padding: 0;/*
+    padding: 0; /*
     margin: var(--spacingMicro); 
     padding: var(--spacingTiny);*/
   }
   
   .results-list li .value-to-gain {
+    width: auto;
     text-align: center;
   }
   
   .results-list li .amount {
+    flex-direction: column;
     text-align: center;
     font-size: var(--body1);
   }
 
+  .mark-1 {
+    border-style: none;
+  }
+
   .results-list li .level{
+    margin: 0;
+    padding: 0;
     display:none;
     font-size: var(--caption);
     letter-spacing: 0.05em;
@@ -563,8 +499,18 @@ body {
     margin: 0;
     padding: 0;
 
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 10px;
     letter-spacing: 0.05em; 
   }
 }
+
+/*
+
+  justify-content: center; //alinhamento dos ítens ao longo do eixo principal, de acordo com o flex-direction
+  align-items: center; //alinhamento de acordo com o eixo transversal, contrario do justify-content
+  align-content: center; //alinha ítens individuais dentro do eixo principal. só tem efeito com várias linhas
+
+*/
