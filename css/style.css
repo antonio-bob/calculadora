@@ -366,8 +366,7 @@ body {
   }
 
   .promo {
-    width: 90%;
-    height: 280px;
+    width: 80vw;
     flex-direction: row;
     justify-content: center;
     gap: 8px;
@@ -379,6 +378,7 @@ body {
 
   .promo-image {
     flex: 2;
+    height: 50vw;
   }
   
   .promo-subtitle {
