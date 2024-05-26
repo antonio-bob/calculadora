@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M6.6,4.7c0-.2.3-.2.4-.2h10c.2,0,.3,0,.4.2l3,5c.1.2,0,.4,0,.6l-8,9c0,.1-.2.2-.4.2s-.3,0-.4-.2L3.6,10.3c-.1-.2-.2-.4,0-.6l3-5ZM7.3,5.5l-2.4,4h3.7l1.2-4h-2.5ZM10.9,5.5l-1.2,4h4.7l-1.2-4h-2.3ZM14.2,5.5l1.2,4h3.7l-2.4-4h-2.5ZM18.9,10.5h-3.5l-2.1,6.3,5.6-6.3ZM12,17.4l2.3-6.9h-4.6l2.3,6.9ZM8.6,10.5l2.1,6.3-5.6-6.3h3.5Z"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><svg id="Camada_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 619.72 656.05"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:18px;}</style></defs><path class="cls-1" d="M115.98,274.14l194.39,232.72,193.37-232.72c.62-.74.62-1.82,0-2.56l-92.19-110.5c-.38-.46-.94-.72-1.54-.72h-199.99c-.59,0-1.15.26-1.53.72l-92.51,110.5c-.62.74-.62,1.82,0,2.57Z"/><line class="cls-1" x1="115.99" y1="271.58" x2="503.74" y2="271.58"/><polygon class="cls-1" points="309.86 166.4 391.02 271.58 310.38 492.33 227.73 271.58 309.86 166.4"/></svg>

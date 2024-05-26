@@ -81,7 +81,19 @@ body {
 .form-label {
   font-size: var(--body1);
   color: var(--colorSecondary);
-  text-align: left;
+  padding: var(--spacingStandard) var(--spacingStandard) 0 var(--spacingStandard);
+}
+
+.label-slider {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-label {
+  font-size: var(--body1);
+  color: var(--colorSecondary);
 }
 
 .calculator {
@@ -209,54 +221,112 @@ body {
 
 .earnings-result {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  background-color: black;
 }
 
 .results-list {
+  margin: 0;
+  padding: 0;
+  background-color:chartreuse;
 }
 
 .results-list .diamond {
-  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  margin: 0;
+  padding: 0;
 
   height: var(--spacingXLarge);
   background-color: var(--colorLevelDiamond);
+  text-transform: uppercase;
 }
 
 
 .results-list .gold{
-  margin-left: var(--spacingTiny);
+  /*margin-left: var(--spacingTiny);
+*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 
+  margin: 0;
+  padding: 0;
   height: var(--spacingXLarge);
+  text-transform: uppercase;
   background-color: var(--colorLevelGold);
 }
 
 .results-list .silver {
-  margin-left: var(--spacingSmall);
+  /*margin-left: var(--spacingSmall);
+*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 
+  margin: 0;
+  padding: 0;
+  height: var(--spacingXLarge);
+  text-transform: uppercase;
   height: var(--spacingXLarge);
   background-color: var(--colorLevelSilver);
 }
 
 .results-list .bronze {
-  margin-left: var(--spacingStandard);
+  /*margin-left: var(--spacingStandard);
+*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 
+  margin: 0;
+  padding: 0;
+  height: var(--spacingXLarge);
+  text-transform: uppercase;
   height: var(--spacingXLarge);
   background-color: var(--colorLevelBronze);
 }
 
 .results-list .seed {
-  margin-left: var(--spacingSemi);
-  
+  /*margin-left: var(--spacingSemi);
+  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  margin: 0;
+  padding: 0;
+  height: var(--spacingXLarge);
+  text-transform: uppercase;
   height: var(--spacingXLarge);
   background-color: var(--colorLevelSeed);
 }
 
 .results-list li {
+  padding: 0;
+  margin: 0;
   display: flex; 
   flex-direction: row; 
   align-items: center; 
   justify-content: space-between;
   
-  text-transform: uppercase; 
+  /*text-transform: uppercase;*/ 
   font-size: var(--body1);
 
   color: var(--colorOnPrimary);
@@ -265,66 +335,86 @@ body {
 }
 
 .results-list li .icon {
-  width: var(--spacingSemi); 
-  height: var(--spacingSemi); 
+  width: var(--spacingLarge); 
+  height: var(--spacingLarge); 
   
-  margin-left: var(--spacingSmall);
+  margin: 0 0 0 var(--spacingTiny);
+  padding: 0;
+  background-color: blueviolet;
+}
+
+.results-list li .level-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  margin: 0;
+  padding: 0;
 }
 
 .results-list li .value-to-gain {
-  width: 140px;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+
   text-align: center;
-}
-
-.results-list li .amount {
-  display: inline-flex;
-  flex-direction: row;
-  gap: 4px;
-}
-
-.mark-1 {
-  display: flex;
-  flex-direction: column;
-  padding: 0 var(--spacingTiny);
-
-  /* Remova a borda inicial */
-  border-style: none solid none none;
-  border-color: var(--colorOnPrimary);
-}
-
-.mark-2 {
-  display: flex;
-  flex-direction: column;
-  padding: 0 var(--spacingMicro);
-
-  /* Remova a borda inicial */
-  border-style: none;
-}
-
-.amount-number {
-  text-align: center;
-  font-size: var(--body1);
-}
-
-.amount-mark {
-  font-size: 9px;
-  letter-spacing: 1px;
+  background-color: cadetblue ;
 }
 
 .results-list li .level{
-  display:inline;
-  font-size: var(--caption);
-  letter-spacing: 0.05em;
   margin: 0;
   padding: 0;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+
+  background-color: bisque;
 }
 
 .results-list li .level-mobile{
   display: none;
-  font-size: 6px;
-  letter-spacing: 0.05em;
+}
+
+.results-list li .amount {
   margin: 0;
   padding: 0;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 4px;
+
+  background-color: aquamarine;
+}
+
+.results-list li .mark-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 var(--spacingTiny) 0 0;
+
+  border-style: none solid none none;
+  border-color: var(--colorOnPrimary);
+}
+
+.results-list li .mark-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 0 var(--spacingMicro);
+
+  border-style: none;
+}
+
+.results-list li .amount-number {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: var(--body2);
+}
+
+.results-list li .amount-mark {
+  margin: 0;
+  padding: 0;
+  font-size: 9px;
+  letter-spacing: 0.05em;
 }
 
 /* Comportamento mobile */
@@ -394,6 +484,7 @@ body {
 
   .promo-icon {
     padding: 0;
+    margin: 0;
   }
   
   .promo-subtitle .promo-tag {
@@ -401,6 +492,8 @@ body {
   
   .earnings-result {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
   
   .results-list {
@@ -414,48 +507,54 @@ body {
   }
 
   .results-list .diamond {
-    height: 170px;
+    height: 100%;
     flex: 1;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
     margin: 0;
-    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
+    padding: var(--spacingSmall) 0 var(--spacingTiny) 0;
   }
   
   .results-list .gold{
-    height: 162px;
+    height: 100%;
     flex: 1;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
+    padding: var(--spacingSmall) 0 var(--spacingTiny) 0;
   }
   
   .results-list .silver {
-    height: 156px;
+    height: 100%;
     flex: 1;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
+    padding: var(--spacingSmall) 0 var(--spacingTiny) 0;
   }
   
   .results-list .bronze {
-    height: 148px;
+    height: 100%;
     flex: 1;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
+    padding: var(--spacingSmall) 0 var(--spacingTiny) 0;
   }
   
   .results-list .seed {
-    height: 140px;
+    height: 100%;
     flex: 1;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    padding: var(--spacingStandard) 0 var(--spacingSmall) 0;
+    padding: var(--spacingSmall) 0 var(--spacingTiny) 0;
   }
   
   .results-list li {
@@ -477,25 +576,28 @@ body {
   
   .results-list li .value-to-gain {
     width: auto;
+    height: auto;
+
     text-align: center;
+
+    padding: 0;
+    margin: 0;
   }
   
   .results-list li .amount {
+    padding: 0;
+    margin: 0;
     flex-direction: column;
     text-align: center;
     font-size: var(--body1);
   }
 
-  .mark-1 {
+  .results-list li .mark-1 {
     border-style: none;
   }
 
   .results-list li .level{
-    margin: 0;
-    padding: 0;
     display:none;
-    font-size: var(--caption);
-    letter-spacing: 0.05em;
   }
   
   .results-list li .level-mobile{
@@ -505,6 +607,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-size: 10px;
     letter-spacing: 0.05em; 
   }
