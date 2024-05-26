@@ -226,13 +226,13 @@ body {
   justify-content: center;
   align-items: flex-end;
 
-  background-color: black;
+  /*background-color: black;*/
 }
 
 .results-list {
   margin: 0;
   padding: 0;
-  background-color:chartreuse;
+  /*background-color:chartreuse;*/
 }
 
 .results-list .diamond {
@@ -340,7 +340,7 @@ body {
   
   margin: 0 0 0 var(--spacingTiny);
   padding: 0;
-  background-color: blueviolet;
+  /*background-color: blueviolet;*/
 }
 
 .results-list li .level-icon {
@@ -358,7 +358,7 @@ body {
   padding: 0;
 
   text-align: center;
-  background-color: cadetblue ;
+  /*background-color: cadetblue ;*/
 }
 
 .results-list li .level{
@@ -367,7 +367,7 @@ body {
   font-size: 0.9em;
   letter-spacing: 0.05em;
 
-  background-color: bisque;
+  /*background-color: bisque;*/
 }
 
 .results-list li .level-mobile{
@@ -381,7 +381,7 @@ body {
   flex-direction: row;
   gap: 4px;
 
-  background-color: aquamarine;
+  /*background-color: aquamarine;*/
 }
 
 .results-list li .mark-1 {
@@ -491,15 +491,18 @@ body {
   }
   
   .earnings-result {
+    margin: 0;
+    padding: 0;
     width: 100%;
     flex-direction: column;
     align-items: center;
   }
   
   .results-list {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 90%;
+
     display: inline-flex;
     flex-direction: row-reverse;
     align-items: flex-end;
@@ -576,23 +579,31 @@ body {
   
   .results-list li .value-to-gain {
     width: auto;
-    height: auto;
-
     text-align: center;
 
     padding: 0;
     margin: 0;
   }
+
+  .results-list li .value-block {
+    margin-top: -20px;
+    padding: 0;
+  }
   
   .results-list li .amount {
-    padding: 0;
-    margin: 0;
+    
+  gap: 0;
+
     flex-direction: column;
     text-align: center;
     font-size: var(--body1);
   }
 
   .results-list li .mark-1 {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     border-style: none;
   }
 
