@@ -74,26 +74,28 @@ body {
 
 .calculator-title{
   text-align: center;
-  padding: var(--spacingStandard);
+  padding: var(--spacingStandard) var(--spacingStandard) 0 var(--spacingStandard);
   color: var(--colorSecondary);
 }
 
 .form-label {
   font-size: var(--body1);
   color: var(--colorSecondary);
-  padding: var(--spacingStandard) var(--spacingStandard) 0 var(--spacingStandard);
+  padding: var(--spacingTiny) 8px;
 }
 
 .label-slider {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
 .slider-label {
   font-size: var(--body1);
   color: var(--colorSecondary);
+  padding-top: 0;
+  padding-bottom: 16px;
 }
 
 .calculator {
@@ -225,6 +227,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  padding-top: 16px;
 
   /*background-color: black;*/
 }
@@ -415,6 +418,10 @@ body {
   padding: 0;
   font-size: 9px;
   letter-spacing: 0.05em;
+}
+
+.calculator-title h1 {
+  padding-bottom: 0;
 }
 
 /* Comportamento mobile */
