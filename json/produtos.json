@@ -7,19 +7,9 @@
                 "valor": "26,90",
                 "coords": {
                     "top": "58px",
-                    "right": "294px"
+                    "right": "256px"
                 },
                 "backgroundColor": "#EB6619"
-            },
-            {
-                "nome": "Refil Creme Desodorante Nutritivo para o Corpo Tododia Algodão",
-                "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw6216fae6/NATBRA-2817_1.jpg",
-                "valor": "34,90",
-                "coords": {
-                    "top": "91px",
-                    "right": "75px"
-                },
-                "backgroundColor": "#E5004B"
             }
         ]
     },
@@ -31,7 +21,7 @@
                 "valor": "74,90",
                 "coords": {
                     "top": "116px",
-                    "right": "324px"
+                    "right": "276px"
                 },
                 "backgroundColor": "#EB6619"
             }
@@ -44,8 +34,8 @@
                 "nome": "Natura Homem Essence",
                 "valor": "139,90",
                 "coords": {
-                    "top": "58px",
-                    "right": "294px"
+                    "top": "75px",
+                    "right": "268px"
                 },
                 "backgroundColor": "#EB6619"
             }
@@ -58,8 +48,8 @@
                 "nome": "Ilía Secreto",
                 "valor": "169,90",
                 "coords": {
-                    "top": "58px",
-                    "right": "294px"
+                    "top": "69px",
+                    "right": "290px"
                 },
                 "backgroundColor": "#EB6619"
             }
@@ -73,7 +63,7 @@
                 "valor": "225,90",
                 "coords": {
                     "top": "58px",
-                    "right": "294px"
+                    "right": "215px"
                 },
                 "backgroundColor": "#EB6619"
             }
@@ -130,20 +120,6 @@
                 "coords": {
                     "top": "80px",
                     "right": "80px"
-                },
-                "backgroundColor": "#E5004B"
-            }
-        ]
-    },
-    "500": {
-        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw2be345fe/NATBRA-126979_1.jpg",
-        "info": [
-            {
-                "nome": "Conjunto Bolsa com Trocador Mamãe e Bebê",
-                "valor": "431,90",
-                "coords": {
-                    "top": "90px",
-                    "right": "90px"
                 },
                 "backgroundColor": "#E5004B"
             }
