@@ -1,0 +1,152 @@
+{
+    "50": {
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dwf1641fc4/NATBRA-123131_1.jpg",
+        "info": [
+            {
+                "nome": "Desodorante Antitranspirante Roll-on Tododia Aclarar",
+                "valor": "26,90",
+                "coords": {
+                    "top": "58px",
+                    "right": "294px"
+                },
+                "backgroundColor": "#EB6619"
+            },
+            {
+                "nome": "Refil Creme Desodorante Nutritivo para o Corpo Tododia Algodão",
+                "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw6216fae6/NATBRA-2817_1.jpg",
+                "valor": "34,90",
+                "coords": {
+                    "top": "91px",
+                    "right": "75px"
+                },
+                "backgroundColor": "#E5004B"
+            }
+        ]
+    },
+    "100": {
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dwb1b80d42/NATBRA-106019_1.jpg",
+        "info": [
+            {
+                "nome": "Conjunto Tododia Ameixa e Flor de Baunilha",
+                "valor": "74,90",
+                "coords": {
+                    "top": "116px",
+                    "right": "324px"
+                },
+                "backgroundColor": "#EB6619"
+            }
+        ]
+    },
+    "150": {
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dwf1a82e09/Produtos/NATBRA-59847_1.jpg",
+        "info": [
+            {
+                "nome": "Natura Homem Essence",
+                "valor": "139,90",
+                "coords": {
+                    "top": "58px",
+                    "right": "294px"
+                },
+                "backgroundColor": "#EB6619"
+            }
+        ]
+    },
+    "200": {
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dwfa467efc/NATBRA-83314_1.jpg",
+        "info": [
+            {
+                "nome": "Ilía Secreto",
+                "valor": "169,90",
+                "coords": {
+                    "top": "58px",
+                    "right": "294px"
+                },
+                "backgroundColor": "#EB6619"
+            }
+        ]
+    },
+    "250": {
+        "imagem": "img/produto-250.png",
+        "info": [
+            {
+                "nome": "Kit Natura Ekos",
+                "valor": "250,00",
+                "coords": {
+                    "top": "58px",
+                    "right": "294px"
+                },
+                "backgroundColor": "#EB6619"
+            }
+        ]
+    },
+    "300": {
+        "imagem": "img/produto-300.png",
+        "info": [
+            {
+                "nome": "Presente Natura Essencial",
+                "valor": "300,00",
+                "coords": {
+                    "top": "58px",
+                    "right": "294px"
+                },
+                "backgroundColor": "#EB6619"
+            }
+        ]
+    },
+    "350": {
+        "imagem": "img/produto-350.png",
+        "info": [
+            {
+                "nome": "Presente Natura Una",
+                "valor": "350,00",
+                "coords": {
+                    "top": "58px",
+                    "right": "294px"
+                },
+                "backgroundColor": "#EB6619"
+            }
+        ]
+    },
+    "400": {
+        "imagem": "img/produto-400.png",
+        "info": [
+            {
+                "nome": "Presente Natura Tododia",
+                "valor": "400,00",
+                "coords": {
+                    "top": "70px",
+                    "left": "70px"
+                },
+                "backgroundColor": "#EB6619"
+            }
+        ]
+    },
+    "450": {
+        "imagem": "img/produto-450.png",
+        "info": [
+            {
+                "nome": "Presente Natura Lumina",
+                "valor": "450,00",
+                "coords": {
+                    "top": "80px",
+                    "right": "80px"
+                },
+                "backgroundColor": "#E5004B"
+            }
+        ]
+    },
+    "500": {
+        "imagem": "img/produto-500.png",
+        "info": [
+            {
+                "nome": "Presente Natura Ekos Priprioca",
+                "valor": "500,00",
+                "coords": {
+                    "top": "90px",
+                    "right": "90px"
+                },
+                "backgroundColor": "#E5004B"
+            }
+        ]
+    }
+}
