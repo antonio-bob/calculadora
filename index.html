@@ -215,7 +215,7 @@
                 setTimeout(() => {
                     imagemProduto.src = produto['imagem'];
                     imagemProduto.alt = produto['info'][0]['nome']; // Assuming first product info is the default
-                    produtoLegenda.innerHTML = `Por R$ <strong>${produto['info'][0]['valor']}</strong><br>${produto['info'][0]['nome']}`;
+                    produtoLegenda.innerHTML = `${produto['info'][0]['nome']}<br>Por R$ <strong>${produto['info'][0]['valor']}</strong>`;
                     imagemProduto.classList.remove('fade-image');
                     updateInfoButtons(produto['info'], imagemProduto);
                 }, 300);
@@ -243,7 +243,7 @@
     
                 let tooltip = document.createElement('div');
                 tooltip.className = 'tooltip';
-                tooltip.innerHTML = `Por R$ <strong>${item.valor}</strong><br>${item.nome}`;
+                tooltip.innerHTML = `${item.nome}<br>Por R$ <strong>${item.valor}</strong>`;
                 button.appendChild(tooltip);
     
                 button.onmouseover = () => tooltip.style.visibility = 'visible';

@@ -66,11 +66,11 @@
         ]
     },
     "250": {
-        "imagem": "img/produto-250.png",
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw5ba57cb9/NATBRA-96735_1.jpg",
         "info": [
             {
-                "nome": "Kit Natura Ekos",
-                "valor": "250,00",
+                "nome": "Super Sérum Redutor de Rugas Chronos",
+                "valor": "225,90",
                 "coords": {
                     "top": "58px",
                     "right": "294px"
@@ -80,11 +80,11 @@
         ]
     },
     "300": {
-        "imagem": "img/produto-300.png",
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw79321fdc/NATBRA-76420_1.jpg",
         "info": [
             {
-                "nome": "Presente Natura Essencial",
-                "valor": "300,00",
+                "nome": "Essencial Masculino",
+                "valor": "254,90",
                 "coords": {
                     "top": "58px",
                     "right": "294px"
@@ -94,11 +94,11 @@
         ]
     },
     "350": {
-        "imagem": "img/produto-350.png",
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw9354307a/NATBRA-150727_1.jpg",
         "info": [
             {
-                "nome": "Presente Natura Una",
-                "valor": "350,00",
+                "nome": "Presente Natura Essencial Exclusivo Feminino",
+                "valor": "R$ 304,90",
                 "coords": {
                     "top": "58px",
                     "right": "294px"
@@ -108,11 +108,11 @@
         ]
     },
     "400": {
-        "imagem": "img/produto-400.png",
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw4502684b/NATBRA-151537_1.png",
         "info": [
             {
-                "nome": "Presente Natura Tododia",
-                "valor": "400,00",
+                "nome": "Presente Natura Una Artisan Especial",
+                "valor": "399,90",
                 "coords": {
                     "top": "70px",
                     "left": "70px"
@@ -122,11 +122,11 @@
         ]
     },
     "450": {
-        "imagem": "img/produto-450.png",
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw2be345fe/NATBRA-126979_1.jpg",
         "info": [
             {
-                "nome": "Presente Natura Lumina",
-                "valor": "450,00",
+                "nome": "Conjunto Bolsa com Trocador Mamãe e Bebê",
+                "valor": "431,90",
                 "coords": {
                     "top": "80px",
                     "right": "80px"
@@ -136,11 +136,11 @@
         ]
     },
     "500": {
-        "imagem": "img/produto-500.png",
+        "imagem": "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw2be345fe/NATBRA-126979_1.jpg",
         "info": [
             {
-                "nome": "Presente Natura Ekos Priprioca",
-                "valor": "500,00",
+                "nome": "Conjunto Bolsa com Trocador Mamãe e Bebê",
+                "valor": "431,90",
                 "coords": {
                     "top": "90px",
                     "right": "90px"
